@@ -1,6 +1,8 @@
 {% block variant_table %}
 {% include 'variant_selectors.html' %}
+Before variant_table_tempplate
 {% include "variant_table_template.html" %}
+After variant_table_template
 <script>
     $(document).ready(function() {
 
@@ -158,7 +160,9 @@
         });
     });
 </script>
+Before variant loading div
 <div id="variants_loading">Loading variants...</div>
 <div id="variants_table_container" style="display: none;"></div>
 <div id="variants_table_empty" style="display: none;">No variants found.</div>
 {% endblock %}
+End varaint_Table.html

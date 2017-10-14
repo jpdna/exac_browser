@@ -677,6 +677,7 @@ def get_gene_page_content(gene_id):
             transcript_id = gene['canonical_transcript']
             transcript = lookups.get_transcript(db, transcript_id)
             variants_in_transcript = lookups.get_variants_in_transcript(db, transcript_id)
+            print "#### variant_in_transcript" + str(variants_in_transcript)
             cnvs_in_transcript = lookups.get_exons_cnvs(db, transcript_id)
             cnvs_per_gene = lookups.get_cnvs(db, gene_id)
             coverage_stats = lookups.get_coverage_for_transcript(db, transcript['xstart'] - EXON_PADDING, transcript['xstop'] + EXON_PADDING)

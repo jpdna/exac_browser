@@ -1,3 +1,4 @@
+Top of varian_Table_tempalte
 <script type="text/javascript">
     window.is_gene = typeof window.transcripts_in_gene != 'undefined';
 </script>
@@ -5,11 +6,14 @@
 <span>
     <a class="btn btn-success hidden-xs" id="export_to_csv">Export table to CSV</a>
 </span>
+Before transcripts_in_gene if
 {% if transcripts_in_gene is defined %}
+     Inside transcript in gene if
     <div>
         <small>&dagger; denotes a consequence that is for a non-canonical transcript</small>
     </div>
 {% endif %}
+Before tabke
 <table id="variant_table" class="tablesorter">
     <thead>
         <tr>
@@ -127,29 +131,11 @@
                 <% } %>
                 <div id="variant_af_box_<%= variant.variant_id %>" style="float: right;"></div>
             </td>
-            <td class="hidden"> <%= variant.pop_acs["African"] %></td>
-            <td class="hidden"> <%= variant.pop_ans["African"] %></td>
-            <td class="hidden"> <%= variant.pop_homs["African"] %></td>
-            <td class="hidden"> <%= variant.pop_acs["East Asian"] %></td>
-            <td class="hidden"> <%= variant.pop_ans["East Asian"] %></td>
-            <td class="hidden"> <%= variant.pop_homs["East Asian"] %></td>
-            <td class="hidden"> <%= variant.pop_acs["European (Non-Finnish)"] %></td>
-            <td class="hidden"> <%= variant.pop_ans["European (Non-Finnish)"] %></td>
-            <td class="hidden"> <%= variant.pop_homs["European (Non-Finnish)"] %></td>
-            <td class="hidden"> <%= variant.pop_acs["European (Finnish)"] %></td>
-            <td class="hidden"> <%= variant.pop_ans["European (Finnish)"] %></td>
-            <td class="hidden"> <%= variant.pop_homs["European (Finnish)"] %></td>
-            <td class="hidden"> <%= variant.pop_acs["Latino"] %></td>
-            <td class="hidden"> <%= variant.pop_ans["Latino"] %></td>
-            <td class="hidden"> <%= variant.pop_homs["Latino"] %></td>
-            <td class="hidden"> <%= variant.pop_acs["Other"] %></td>
-            <td class="hidden"> <%= variant.pop_ans["Other"] %></td>
-            <td class="hidden"> <%= variant.pop_homs["Other"] %></td>
-            <td class="hidden"> <%= variant.pop_acs["South Asian"] %></td>
-            <td class="hidden"> <%= variant.pop_ans["South Asian"] %></td>
-            <td class="hidden"> <%= variant.pop_homs["South Asian"] %></td>
+
+
         </tr>
     <% }); %>
     </tbody>
 </table>
+After talbe
 </script>
